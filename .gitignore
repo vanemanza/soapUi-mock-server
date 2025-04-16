@@ -1,0 +1,19 @@
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
+
+# Build artifacts
+target/
+build/
+war/*.war
+
+# Docker
+.docker/
+
+# OS files
+.DS_Store
+Thumbs.db
