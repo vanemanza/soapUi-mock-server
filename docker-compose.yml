@@ -1,7 +1,16 @@
 version: '3'
+
 services:
-  mock-server:
+  sunat-mock:
     build: .
+    container_name: sunat-mock
     ports:
       - "8080:8080"
+    networks:
+      - soap-mock-network
+
+networks:
+  soap-mock-network:
+    name: soap-mock-network
+    driver: bridge
     restart: unless-stopped
